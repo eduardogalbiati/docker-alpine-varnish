@@ -1,0 +1,9 @@
+version: '2'
+services:
+  varnish:
+    build: .
+    ports:
+     - "80:80"
+    volumes:
+     - ./default.vcl:/etc/varnish/default.vcl
+
